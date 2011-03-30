@@ -1,0 +1,10 @@
+<!-- app/views/pages/login.html.erb -->
+<h2>Welcome to Login Page.</h2>
+
+<%= form_for :user, :url => {:action => "login" } do |f| %>
+  <%= f.label "Username: " %>
+  <%= f.text_field :username %><br />
+  <%= f.label "Password: " %>
+  <%= f.password_field :password %><br />
+  <%= f.submit "Login" %>
+<% end %>

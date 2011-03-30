@@ -1,0 +1,13 @@
+<!-- app/views/users/chooseUser.html.erb -->
+
+<% if cookies.signed[:is_admin]%>
+  <h2>Select User to Edit</h2>
+  <%= form_for :id, :url => {:action => "edit"} do |f| %>
+    <%= f.collection_select @user, @users, :id, :username, 
+      options = {:prompt => "Select..."}, :class => "user" %><br />
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= button_to "Cancel", :controller => "users", :action => "index" %>
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>

@@ -1,0 +1,18 @@
+<!-- app/views/users/edit.html.erb -->
+
+<% if cookies.signed[:is_admin] %>
+  <h2>Edit User</h2>
+  <%= form_for @user, :url => { :action => "update" } do |f| %>
+    <%= f.label "First Name: " %><%= f.text_field :first_name %><br />
+    <%= f.label "Last Name: " %><%= f.text_field :last_name %><br />
+    <%= f.label "Email: " %><%= f.text_field :email %><br />
+    <%= f.label "Username: " %><%= f.text_field :username %><br />
+    <%= f.label "Department: " %><%= f.text_field :dep %><br />
+    <%= f.label "Division: " %><%= f.text_field :div %><br />
+    <%= f.hidden_field :id %>
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= button_to "Cancel", :controller => "users", :action => "index" %>
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>

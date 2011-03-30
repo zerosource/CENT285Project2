@@ -1,0 +1,13 @@
+<!-- app/views/user_suggestions/edit.html.erb -->
+
+<% if cookies.signed[:authenticated]%>
+  <h2>Edit Suggestion</h2>
+  <%= form_for @suggestion, :url => { :action => "update" } do |f| %>
+    <%= f.text_area :suggest %><br />
+    <%= f.hidden_field :id %>
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= button_to "Cancel", :controller => "user_suggestions", :action => "index" %>
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>

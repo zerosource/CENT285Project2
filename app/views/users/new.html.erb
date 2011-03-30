@@ -1,0 +1,18 @@
+<!-- app/views/users/new.html.erb -->
+
+<% if cookies.signed[:is_admin]%>
+  <h2>Create User</h2>
+  <%= form_for :user, :url => { :action => "create" } do |f| %>
+    <%= f.label "First Name: " %><%= f.text_field :f_name %><br />
+    <%= f.label "Last Name: " %><%= f.text_field :l_name %><br />
+    <%= f.label "E-Mail: " %><%= f.text_field :email %><br />
+    <%= f.label "Username: " %><%= f.text_field :username %><br />
+    <%= f.label "Password: " %><%= f.password_field :password %><br />
+    <%= f.label "Division: " %><%= f.text_field :div %><br />
+    <%= f.label "Department: " %><%= f.text_field :dep %><br />
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= button_to "Cancel", :controller => "users", :action => "index" %>
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>

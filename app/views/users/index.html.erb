@@ -1,0 +1,32 @@
+<!-- app/views/users/index.html.erb -->
+
+<% if cookies.signed[:is_admin] %>
+  <h2>Users List</h2>
+  <table border="1" class="sortable">
+    <tr>
+      <th><a href="#">First</a></th>
+      <th><a href="#">Last</a></th>
+      <th><a href="#">Username</a></th>
+      <th><a href="#">Division</a></th>
+      <th><a href="#">Department</a></th>
+    </tr>
+    <% @users.each do |u| %>
+      <tr>
+        <td><%= u.first_name %></td>
+        <td><%= u.last_name %></td>
+        <td><%= u.username %></td>
+        <td><%= u.div %></td>
+        <td><%= u.dep %></td>
+      </tr>
+    <% end %>
+
+  <table>
+  <br /><%= link_to "Add User", :controller => "users", :action => "new" %><br />
+  <%= link_to "Edit User", :controller => "users", :action => "chooseUser" %><br />
+  <%= link_to "View Suggestions", :controller => "user_suggestions", :action => "index" %><br />
+
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>
+
+  <br /><%= link_to "Logout", :controller => "pages", :action => "logout" %>

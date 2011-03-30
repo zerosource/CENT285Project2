@@ -1,0 +1,13 @@
+<!-- app/views/user_suggestions/chooseSuggestion.html.erb -->
+
+<% if cookies.signed[:authenticated]%>
+  <h2>Select Suggestion to Edit</h2>
+  <%= form_for :sugid, :url => {:action => "edit"} do |f| %>
+    <%= f.collection_select @suggestion, @suggestions, :sugid, :suggest, 
+      options = {:prompt => "Select..."}, :class => "suggestion" %><br />
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= button_to "Cancel", :controller => "user_suggestions", :action => "index" %>
+<% else %>
+  <h2>Insufficient Permission.</h2>
+<% end %>

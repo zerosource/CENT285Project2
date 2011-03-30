@@ -1,0 +1,9 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: cent285p2
+  pool: 5
+  username: alan
+  password: alan
+

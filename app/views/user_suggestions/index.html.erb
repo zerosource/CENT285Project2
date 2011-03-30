@@ -1,0 +1,39 @@
+<!-- app/views/user_suggestions/index.html.erb -->
+
+<h2>Suggestions index</h2>
+<p>Logged in as: <%= @username %>
+<br />Division: <%= @division %>
+<br />Department: <%= @department %></p>
+<table border="1" class="sortable">
+  <tr>
+    <th><a href="#">Name</a></th>
+    <th><a href="#">Username</a></th>
+    <th><a href="#">Division</a></th>
+    <th><a href="#">Department</a></th>
+    <th><a href="#">Suggestion</a></th>
+    <th><a href="#">Created</a></th>
+    <th><a href="#">Updated</a></th>
+  </tr>
+  <% @usersuggestions.each do |ab| %>
+    <tr>
+      <td><%= ab.first_name %> <%= ab.last_name %></td>
+      <td><%= ab.username %></td>
+      <td><%= ab.div %></td>
+      <td><%= ab.dep %></td>
+      <td><%= ab.suggest %></td>
+      <td><%= ab.created.asctime %></td>
+      <td><%= ab.updated.asctime %></td>
+    </tr>
+  <% end %>
+</table>
+
+<% if cookies.signed[:authenticated] %>
+  <%= link_to "Add Suggestion", :controller => "user_suggestions", :action => "new" %>&nbsp;
+  <%= link_to "Edit Suggestions", :controller => "user_suggestions", :action => "chooseSuggestion" %>&nbsp;
+<% end %>
+
+<% if cookies.signed[:is_admin] %>
+  <%= link_to "Manage Users", :controller => "users", :action => "index" %>&nbsp;
+<% end %>
+
+  <br /><br /><%= link_to "Logout", :controller => "pages", :action => "logout" %>

@@ -1,0 +1,2619 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-27 23:42:27 -1000
+
+PGError (FATAL:  password authentication failed for user "pro2"
+):
+  
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.6ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (77.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-27 23:53:08 -1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (5.6ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (97.7ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (4.5ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 108.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-27 23:55:35 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.5ms)[0m  select get_id('a','a')
+Rendered pages/login.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-27 23:55:48 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"head1hancho1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('head1hancho1','password')[0m
+Rendered pages/login.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-27 23:56:09 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"head1hancho1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (5.9ms)[0m  select get_id('head1hancho1','password')
+Rendered pages/login.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-27 23:56:15 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"guest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('guest','guest')[0m
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 3ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-27 23:56:15 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[35mUserSuggestion Load (2.7ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view"
+Rendered user_suggestions/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 233ms (Views: 23.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-27 23:56:29 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (9.3ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 41ms (Views: 26.9ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-28 10:41:25 -1000
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.3ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (5.4ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 109ms (Views: 101.7ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-28 10:41:47 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"icywind32", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.5ms)[0m  select get_id('icywind32','awedxzs32')
+Rendered pages/login.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-28 11:44:12 -1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (20.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (21.3ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 52ms (Views: 29.2ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-28 11:44:15 -1000
+  Processing by PagesController#login as HTML
+  [1m[35mSQL (0.6ms)[0m  select get_id('','')
+Rendered pages/login.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 74ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-28 11:44:22 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eu8pkkYkU38Hhi0Jv9jusHKZs9rShmOtI4K1nrcRiqg=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('admin','admin')[0m
+Rendered pages/login.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 12:36:13 -1000
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (7.2ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 88ms (Views: 78.4ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 12:36:20 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"pro2", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.9ms)[0m  select get_id('pro2','pro2')
+Rendered pages/login.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 12:36:32 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"nate", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.8ms)[0m  [1mselect get_id('nate','password')[0m
+Rendered pages/login.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 13:21:14 -1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.4ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.5ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (4.8ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 13:21:30 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"guest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (1.0ms)[0m  select get_id('guest','guest')
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 3ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 13:21:31 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mUserSuggestion Load (4.0ms)[0m  [1mSELECT "user_suggestion_view".* FROM "user_suggestion_view"[0m
+  [1m[35mSQL (19.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered user_suggestions/index.html.erb within layouts/application (180.3ms)
+Completed 200 OK in 367ms (Views: 172.0ms | ActiveRecord: 23.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 13:21:52 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"head1hancho1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (7.1ms)[0m  [1mselect get_id('head1hancho1','password')[0m
+  [1m[35mSQL (70.0ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 219ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 13:21:52 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 13:21:58 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[35mSQL (1.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (77.0ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+  [1m[36mUserSuggestion Load (1.4ms)[0m  [1mSELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'CENT')[0m
+Rendered user_suggestions/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 407ms (Views: 34.0ms | ActiveRecord: 84.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:24:35 -1000
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (9.9ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (4.6ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (79.9ms)
+Completed 200 OK in 133ms (Views: 127.0ms | ActiveRecord: 15.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:24:59 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (2.4ms)[0m  select get_id('admin1','apassword')
+  [1m[36mSQL (38.8ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (4.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 352ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:24:59 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:25:03 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (104.7ms)
+Completed 200 OK in 139ms (Views: 116.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:25:38 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (33.3ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (4.8ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (95.4ms)
+Completed   in 509ms
+
+ActionView::Template::Error (undefined method `text' for #<UserSuggestion:0x9c661c4>):
+    20:       <td><%= ab.username %></td>
+    21:       <td><%= ab.div %></td>
+    22:       <td><%= ab.dep %></td>
+    23:       <td><%= ab.text %></td>
+    24:       <td><%= ab.created_at.asctime %></td>
+    25:       <td><%= ab.updated_at.asctime %></td>
+    26:     </tr>
+  app/views/user_suggestions/index.html.erb:23:in `block in _app_views_user_suggestions_index_html_erb___708080568_81970720__622636665'
+  app/views/user_suggestions/index.html.erb:17:in `each'
+  app/views/user_suggestions/index.html.erb:17:in `_app_views_user_suggestions_index_html_erb___708080568_81970720__622636665'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.8ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:26:45 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (83.7ms)
+Completed 200 OK in 277ms (Views: 93.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:27:16 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (2.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 269ms (Views: 40.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:27:24 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:28:25 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:28:31 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.7ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:28:36 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"guest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (4.7ms)[0m  select get_id('guest','guest')
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 7ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:28:36 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mUserSuggestion Load (1.1ms)[0m  [1mSELECT "user_suggestion_view".* FROM "user_suggestion_view"[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered user_suggestions/index.html.erb within layouts/application (113.8ms)
+Completed 200 OK in 137ms (Views: 119.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:28:51 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:28:55 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.6ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:30:34 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"user1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.5ms)[0m  select get_id('user1','upassword')
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 117ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:30:34 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:30:38 -1000
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 69ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:31:44 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 35ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:31:55 -1000
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 80ms (Views: 60.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:32:13 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:32:25 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:32:29 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.7ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:33:05 -1000
+  Processing by PagesController#login as HTML
+  [1m[35mSQL (4.4ms)[0m  select get_id('','')
+Rendered pages/login.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 26ms (Views: 20.5ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:33:11 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"guest", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('guest','guest')[0m
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 3ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:33:11 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[35mUserSuggestion Load (1.2ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view"
+  [1m[36mSQL (2.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Rendered user_suggestions/index.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 106ms (Views: 84.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:33:21 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:33:23 -1000
+  Processing by PagesController#login as HTML
+  [1m[35mSQL (0.5ms)[0m  select get_id('','')
+Rendered pages/login.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:33:31 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.9ms)[0m  [1mselect get_id('admin1','apassword')[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 147ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:33:32 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:33:36 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (65.1ms)
+Completed 200 OK in 99ms (Views: 75.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:34:35 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (2.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (123.0ms)
+Completed 200 OK in 160ms (Views: 133.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:34:51 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (102.2ms)
+Completed 200 OK in 140ms (Views: 111.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:35:01 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (79.8ms)
+Completed 200 OK in 166ms (Views: 139.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-03-29 15:35:04 -1000
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:35:11 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 118ms (Views: 92.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/chooseUser" for 127.0.0.1 at 2011-03-29 15:35:14 -1000
+  Processing by UsersController#chooseUser as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/chooseUser.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 163ms (Views: 90.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:35:20 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (4.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (102.0ms)
+Completed 200 OK in 132ms (Views: 105.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-03-29 15:35:23 -1000
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:36:22 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (96.9ms)
+Completed 200 OK in 176ms (Views: 109.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-03-29 15:36:25 -1000
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:36:28 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (3.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 89ms (Views: 63.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/chooseUser" for 127.0.0.1 at 2011-03-29 15:37:47 -1000
+  Processing by UsersController#chooseUser as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/chooseUser.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 160ms (Views: 139.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:38:36 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (3.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (140.5ms)
+Completed 200 OK in 175ms (Views: 146.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-03-29 15:38:39 -1000
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:38:43 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 154ms (Views: 83.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/chooseUser" for 127.0.0.1 at 2011-03-29 15:38:45 -1000
+  Processing by UsersController#chooseUser as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/chooseUser.html.erb within layouts/application (102.9ms)
+Completed 200 OK in 135ms (Views: 109.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/index" for 127.0.0.1 at 2011-03-29 15:38:51 -1000
+  Processing by UsersController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (91.1ms)
+Completed 200 OK in 122ms (Views: 101.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:38:54 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (2.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.8ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 244ms (Views: 35.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:39:10 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:40:18 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (3.7ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 258ms (Views: 44.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:40:21 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:40:25 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (5.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.4ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 257ms (Views: 47.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:40:28 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (2.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (27.4ms)
+Completed   in 262ms
+
+ActionView::Template::Error (undefined method `text' for #<UserSuggestion:0x9d976d8>):
+    3: <% if cookies.signed[:authenticated]%>
+    4:   <h2>Please, choose a suggestion to edit:</h2>
+    5:   <%= form_for :sugid, :url => {:action => "edit"} do |f| %>
+    6:     <%= f.collection_select @suggestion, @suggestions, :sugid, :text, 
+    7:       options = {:prompt => "Choose one of these..."}, :class => "suggestion" %><br />
+    8:     <%= f.submit "Submit" %>
+    9:   <% end %>
+  app/views/user_suggestions/chooseSuggestion.html.erb:6:in `block in _app_views_user_suggestions_choose_uggestion_html_erb__284269617_82587090__622636665'
+  app/views/user_suggestions/chooseSuggestion.html.erb:5:in `_app_views_user_suggestions_choose_uggestion_html_erb__284269617_82587090__622636665'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.7ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.7ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:41:12 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (100.3ms)
+Completed 200 OK in 137ms (Views: 109.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:41:24 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:41:27 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:41:33 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"user1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.6ms)[0m  select get_id('user1','upassword')
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 74ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:41:33 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:41:37 -1000
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 13.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:41:42 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (5.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.2ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."dep" = 'dep4')
+Rendered user_suggestions/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 375ms (Views: 37.4ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:41:46 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (3.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (21.0ms)
+Completed   in 197ms
+
+ActionView::Template::Error (undefined method `text' for #<UserSuggestion:0x9beec3c>):
+    3: <% if cookies.signed[:authenticated]%>
+    4:   <h2>Please, choose a suggestion to edit:</h2>
+    5:   <%= form_for :sugid, :url => {:action => "edit"} do |f| %>
+    6:     <%= f.collection_select @suggestion, @suggestions, :sugid, :text, 
+    7:       options = {:prompt => "Choose one of these..."}, :class => "suggestion" %><br />
+    8:     <%= f.submit "Submit" %>
+    9:   <% end %>
+  app/views/user_suggestions/chooseSuggestion.html.erb:6:in `block in _app_views_user_suggestions_choose_uggestion_html_erb__284269617_81728460__622636665'
+  app/views/user_suggestions/chooseSuggestion.html.erb:5:in `_app_views_user_suggestions_choose_uggestion_html_erb__284269617_81728460__622636665'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.9ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.5ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:42:12 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (2.5ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (23.2ms)
+Completed   in 223ms
+
+ActionView::Template::Error (undefined method `text' for #<UserSuggestion:0x9c9bbf8>):
+    3: <% if cookies.signed[:authenticated]%>
+    4:   <h2>Please, choose a suggestion to edit:</h2>
+    5:   <%= form_for :sugid, :url => {:action => "edit"} do |f| %>
+    6:     <%= f.collection_select @suggestion, @suggestions, :sugid, :text, 
+    7:       options = {:prompt => "Choose one of these..."}, :class => "suggestion" %><br />
+    8:     <%= f.submit "Submit" %>
+    9:   <% end %>
+  app/views/user_suggestions/chooseSuggestion.html.erb:6:in `block in _app_views_user_suggestions_choose_uggestion_html_erb__284269617_82066330__622636665'
+  app/views/user_suggestions/chooseSuggestion.html.erb:5:in `_app_views_user_suggestions_choose_uggestion_html_erb__284269617_82066330__622636665'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.8ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.1ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:42:20 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (6.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (4.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.7ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (23.9ms)
+Completed   in 267ms
+
+ActionView::Template::Error (undefined method `text' for #<UserSuggestion:0x9cf5248>):
+    3: <% if cookies.signed[:authenticated]%>
+    4:   <h2>Please, choose a suggestion to edit:</h2>
+    5:   <%= form_for :sugid, :url => {:action => "edit"} do |f| %>
+    6:     <%= f.collection_select @suggestion, @suggestions, :sugid, :text, 
+    7:       options = {:prompt => "Choose one of these..."}, :class => "suggestion" %><br />
+    8:     <%= f.submit "Submit" %>
+    9:   <% end %>
+  app/views/user_suggestions/chooseSuggestion.html.erb:6:in `block in _app_views_user_suggestions_choose_uggestion_html_erb__284269617_82260220__622636665'
+  app/views/user_suggestions/chooseSuggestion.html.erb:5:in `_app_views_user_suggestions_choose_uggestion_html_erb__284269617_82260220__622636665'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.3ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:43:09 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (2.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.1ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 272ms (Views: 40.8ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:43:14 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (2.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.0ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."dep" = 'dep4')
+Rendered user_suggestions/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 240ms (Views: 38.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:43:29 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.0ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 270ms (Views: 34.5ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:43:32 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (2.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (5.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.4ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."dep" = 'dep4')
+Rendered user_suggestions/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 255ms (Views: 66.6ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:43:35 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:43:45 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (2.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.0ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."dep" = 'dep4')
+Rendered user_suggestions/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 250ms (Views: 42.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:43:48 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.8ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."uid" = 3)
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 253ms (Views: 32.6ms | ActiveRecord: 8.3ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:43:51 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."dep" = 'dep4')
+Rendered user_suggestions/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 217ms (Views: 33.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:43:55 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:43:57 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:44:03 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (0.6ms)[0m  select get_id('admin1','password')
+Rendered pages/login.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:44:10 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (0.5ms)[0m  [1mselect get_id('admin1','apassword')[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 78ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:44:10 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:44:13 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (3.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 215ms (Views: 32.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:44:16 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (2.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 284ms (Views: 51.3ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/user_suggestions/edit" for 127.0.0.1 at 2011-03-29 15:44:20 -1000
+  Processing by UserSuggestionsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "sugid"=>["7"], "commit"=>"Submit"}
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSuggestion Load (0.5ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE ("suggestions"."id" IN (7)) LIMIT 1[0m
+Rendered user_suggestions/edit.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 92ms (Views: 26.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/user_suggestions/edit" for 127.0.0.1 at 2011-03-29 15:44:38 -1000
+  Processing by UserSuggestionsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "sugid"=>["7"], "commit"=>"Submit"}
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSuggestion Load (0.7ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE ("suggestions"."id" IN (7)) LIMIT 1
+Rendered user_suggestions/edit.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 72ms (Views: 28.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:44:42 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (2.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 259ms (Views: 46.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:46:35 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:49:16 -1000
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.7ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.6ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TIME ZONE
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (4.8ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:49:29 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mSQL (3.2ms)[0m  select get_id('admin1','apassword')
+  [1m[36mSQL (5.1ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (8.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 281ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:49:30 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:49:36 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (109.9ms)
+Completed 200 OK in 151ms (Views: 125.5ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:49:41 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (10.3ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 410ms (Views: 47.4ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:49:50 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:49:54 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.2ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 294ms (Views: 52.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:49:58 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (109.9ms)
+Completed 200 OK in 150ms (Views: 122.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-03-29 15:50:00 -1000
+  Processing by UsersController#new as HTML
+Rendered users/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 127.0.0.1 at 2011-03-29 15:50:34 -1000
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"f_name"=>"admin3", "l_name"=>"admin3", "email"=>"ad3@mail.com", "username"=>"admin3", "password"=>"[FILTERED]", "div"=>"dep3", "dep"=>"dep3"}, "commit"=>"Submit"}
+  [1m[36mPK and serial sequence (38.4ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users_view"'::regclass
+[0m
+  [1m[35mPK and custom sequence (19.9ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"users_view"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (5.2ms)[0m  [1minsert into users_view (first_name,last_name,email,username,password,dep,div) values ('admin3','admin3','ad3@mail.com',
+ 'admin3', 'apassword','dep3','dep3')[0m
+  [1m[35mPK and serial sequence (5.3ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users_view"'::regclass
+  [1m[36mPK and custom sequence (2.4ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"users_view"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+Redirected to http://localhost:3000/users/index
+Completed 302 Found in 77ms
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:50:34 -1000
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+Rendered users/index.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 98ms (Views: 72.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:50:41 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 71.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:50:44 -1000
+  Processing by PagesController#login as HTML
+  [1m[35mSQL (0.4ms)[0m  select get_id('','')
+Rendered pages/login.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:50:52 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin3", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (3.4ms)[0m  [1mselect get_id('admin3','apassword')[0m
+  [1m[35mSQL (1.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 154ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:50:53 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2011-03-29 15:50:56 -1000
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered users/index.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 139ms (Views: 67.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:51:00 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (2.1ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 7) LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'dep3')
+Rendered user_suggestions/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 260ms (Views: 24.6ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:51:04 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/create" for 127.0.0.1 at 2011-03-29 15:51:17 -1000
+  Processing by UserSuggestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user_suggestion"=>{"suggestion"=>"New admin3 suggestion."}, "commit"=>"Submit"}
+  [1m[36mPK and serial sequence (2.3ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"suggestions(text,created_at,updated_at)"'::regclass
+[0m
+PGError: ERROR:  relation "suggestions(text,created_at,updated_at)" does not exist
+LINE 14:             AND dep.refobjid      = '"suggestions(text,creat...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"suggestions(text,created_at,updated_at)"'::regclass
+  [1m[35mSQL (0.5ms)[0m  insert into suggestions(text,created_at,updated_at) values ('New admin3 suggestion.',now(),now())
+PGError: ERROR:  column "text" of relation "suggestions" does not exist
+LINE 1: insert into suggestions(text,created_at,updated_at) values (...
+                                ^
+: insert into suggestions(text,created_at,updated_at) values ('New admin3 suggestion.',now(),now())
+Completed   in 5ms
+
+ActiveRecord::StatementInvalid (PGError: ERROR:  column "text" of relation "suggestions" does not exist
+LINE 1: insert into suggestions(text,created_at,updated_at) values (...
+                                ^
+: insert into suggestions(text,created_at,updated_at) values ('New admin3 suggestion.',now(),now())):
+  app/controllers/user_suggestions_controller.rb:32:in `create'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (76.9ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.6ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:53:10 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (4.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 7) LIMIT 1
+  [1m[36mSQL (4.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.3ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'dep3')
+Rendered user_suggestions/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 224ms (Views: 22.2ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:53:13 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 7) LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (5.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.8ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'dep3')
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 260ms (Views: 21.3ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/user_suggestions/edit" for 127.0.0.1 at 2011-03-29 15:53:18 -1000
+  Processing by UserSuggestionsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "sugid"=>[""], "commit"=>"Submit"}
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSuggestion Load (0.7ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE ("suggestions"."id" IN (0)) LIMIT 1[0m
+Rendered user_suggestions/edit.html.erb within layouts/application (52.5ms)
+Completed   in 109ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    2: 
+    3: <% if cookies.signed[:authenticated]%>
+    4:   <h2>Edit Suggestion</h2>
+    5:   <%= form_for @suggestion, :url => { :action => "update" } do |f| %>
+    6:     <%= f.text_area :suggest %><br />
+    7:     <%= f.hidden_field :id %>
+    8:     <%= f.submit "Submit" %>
+  app/views/user_suggestions/edit.html.erb:5:in `_app_views_user_suggestions_edit_html_erb___667330279_84341960__58297736'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.9ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:53:24 -1000
+  Processing by PagesController#login as HTML
+  [1m[35mSQL (0.5ms)[0m  select get_id('','')
+Rendered pages/login.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2011-03-29 15:53:31 -1000
+  Processing by PagesController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user"=>{"username"=>"admin1", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mSQL (4.0ms)[0m  [1mselect get_id('admin1','apassword')[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Redirected to http://localhost:3000/pages/continue
+Completed 302 Found in 124ms
+
+
+Started GET "/pages/continue" for 127.0.0.1 at 2011-03-29 15:53:31 -1000
+  Processing by PagesController#continue as HTML
+Rendered pages/continue.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:53:35 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (6.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 260ms (Views: 72.8ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:53:38 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[36mSQL (2.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (6.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 220ms (Views: 39.1ms | ActiveRecord: 12.9ms)
+
+
+Started POST "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:53:42 -1000
+  Processing by UserSuggestionsController#index as HTML
+  Parameters: {"authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U="}
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (2.2ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (0.9ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 302ms (Views: 44.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/user_suggestions/new" for 127.0.0.1 at 2011-03-29 15:53:44 -1000
+  Processing by UserSuggestionsController#new as HTML
+Rendered user_suggestions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_suggestions/create" for 127.0.0.1 at 2011-03-29 15:53:55 -1000
+  Processing by UserSuggestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user_suggestion"=>{"suggestion"=>"New admin1 sug."}, "commit"=>"Submit"}
+  [1m[36mPK and serial sequence (1.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"suggestions(text,created_at,updated_at)"'::regclass
+[0m
+PGError: ERROR:  relation "suggestions(text,created_at,updated_at)" does not exist
+LINE 14:             AND dep.refobjid      = '"suggestions(text,creat...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"suggestions(text,created_at,updated_at)"'::regclass
+  [1m[35mSQL (0.3ms)[0m  insert into suggestions(text,created_at,updated_at) values ('New admin1 sug.',now(),now())
+PGError: ERROR:  column "text" of relation "suggestions" does not exist
+LINE 1: insert into suggestions(text,created_at,updated_at) values (...
+                                ^
+: insert into suggestions(text,created_at,updated_at) values ('New admin1 sug.',now(),now())
+Completed   in 4ms
+
+ActiveRecord::StatementInvalid (PGError: ERROR:  column "text" of relation "suggestions" does not exist
+LINE 1: insert into suggestions(text,created_at,updated_at) values (...
+                                ^
+: insert into suggestions(text,created_at,updated_at) values ('New admin1 sug.',now(),now())):
+  app/controllers/user_suggestions_controller.rb:32:in `create'
+
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (48.4ms)
+Rendered /home/alan/.rvm/gems/ruby-1.9.2-p136@rails3/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.7ms)
+
+
+Started POST "/user_suggestions/create" for 127.0.0.1 at 2011-03-29 15:55:12 -1000
+  Processing by UserSuggestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "user_suggestion"=>{"suggestion"=>"New admin1 suggestion."}, "commit"=>"Submit"}
+  [1m[36mPK and serial sequence (0.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"suggestions(suggest,created,updated)"'::regclass
+[0m
+PGError: ERROR:  relation "suggestions(suggest,created,updated)" does not exist
+LINE 14:             AND dep.refobjid      = '"suggestions(suggest,cr...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"suggestions(suggest,created,updated)"'::regclass
+  [1m[35mSQL (114.4ms)[0m  insert into suggestions(suggest,created,updated) values ('New admin1 suggestion.',now(),now())
+  [1m[36mPK and serial sequence (0.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"suggestions(suggest,created,updated)"'::regclass
+[0m
+PGError: ERROR:  relation "suggestions(suggest,created,updated)" does not exist
+LINE 14:             AND dep.refobjid      = '"suggestions(suggest,cr...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"suggestions(suggest,created,updated)"'::regclass
+  [1m[35mSQL (0.4ms)[0m  select currval('suggestion_id_seq')
+  [1m[36mPK and serial sequence (0.6ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"user_suggestion(user_id,suggestion_id)"'::regclass
+[0m
+PGError: ERROR:  relation "user_suggestion(user_id,suggestion_id)" does not exist
+LINE 14:             AND dep.refobjid      = '"user_suggestion(user_i...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"user_suggestion(user_id,suggestion_id)"'::regclass
+  [1m[35mSQL (5.4ms)[0m  insert into user_suggestion(user_id,suggestion_id) values (1,8)
+  [1m[36mPK and serial sequence (0.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"user_suggestion(user_id,suggestion_id)"'::regclass
+[0m
+PGError: ERROR:  relation "user_suggestion(user_id,suggestion_id)" does not exist
+LINE 14:             AND dep.refobjid      = '"user_suggestion(user_i...
+                                             ^
+:           SELECT attr.attname, seq.relname
+          FROM pg_class      seq,
+               pg_attribute  attr,
+               pg_depend     dep,
+               pg_namespace  name,
+               pg_constraint cons
+          WHERE seq.oid           = dep.objid
+            AND seq.relkind       = 'S'
+            AND attr.attrelid     = dep.refobjid
+            AND attr.attnum       = dep.refobjsubid
+            AND attr.attrelid     = cons.conrelid
+            AND attr.attnum       = cons.conkey[1]
+            AND cons.contype      = 'p'
+            AND dep.refobjid      = '"user_suggestion(user_id,suggestion_id)"'::regclass
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 130ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:55:12 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[35mSQL (2.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.1ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+  [1m[36mUserSuggestion Load (1.1ms)[0m  [1mSELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')[0m
+Rendered user_suggestions/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 229ms (Views: 44.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/user_suggestions/chooseSuggestion" for 127.0.0.1 at 2011-03-29 15:55:20 -1000
+  Processing by UserSuggestionsController#chooseSuggestion as HTML
+  [1m[35mSQL (1.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.9ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+  [1m[36mUserSuggestion Load (1.0ms)[0m  [1mSELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')[0m
+Rendered user_suggestions/chooseSuggestion.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 251ms (Views: 55.6ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/user_suggestions/edit" for 127.0.0.1 at 2011-03-29 15:55:25 -1000
+  Processing by UserSuggestionsController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "sugid"=>["8"], "commit"=>"Submit"}
+  [1m[35mSQL (2.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.8ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSuggestion Load (2.0ms)[0m  SELECT "suggestions".* FROM "suggestions" WHERE ("suggestions"."id" IN (8)) LIMIT 1
+Rendered user_suggestions/edit.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 122ms (Views: 41.9ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/user_suggestions/update" for 127.0.0.1 at 2011-03-29 15:55:36 -1000
+  Processing by UserSuggestionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"loJkKfdZIdDk9QVnw5gCzxN3AAY+MMX7pU0ULmqVQ9U=", "suggestion"=>{"suggest"=>"New admin1 suggestion. Updated.", "id"=>"8"}, "commit"=>"Submit"}
+  [1m[36mSQL (1.9ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"suggestions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSuggestion Load (0.4ms)[0m  [1mSELECT "suggestions".* FROM "suggestions" WHERE ("suggestions"."id" = 8) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (2.0ms)[0m  [1mUPDATE "suggestions" SET "suggest" = 'New admin1 suggestion. Updated.', "updated" = '2011-03-30 01:55:36.286613' WHERE ("suggestions"."id" = 8)[0m
+  [1m[35mSQL (2.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/user_suggestions/index
+Completed 302 Found in 182ms
+
+
+Started GET "/user_suggestions/index" for 127.0.0.1 at 2011-03-29 15:55:36 -1000
+  Processing by UserSuggestionsController#index as HTML
+  [1m[36mSQL (1.3ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (2.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"user_suggestion_view"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'user_suggestion_view'
+ 
+[0m
+  [1m[35mUserSuggestion Load (1.4ms)[0m  SELECT "user_suggestion_view".* FROM "user_suggestion_view" WHERE ("user_suggestion_view"."div" = 'ad1')
+Rendered user_suggestions/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 229ms (Views: 40.7ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/pages/logout" for 127.0.0.1 at 2011-03-29 15:56:08 -1000
+  Processing by PagesController#logout as HTML
+Rendered pages/logout.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 15:56:11 -1000
+  Processing by PagesController#login as HTML
+  [1m[36mSQL (0.6ms)[0m  [1mselect get_id('','')[0m
+Rendered pages/login.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.6ms)
