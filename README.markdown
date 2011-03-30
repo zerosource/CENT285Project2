@@ -8,8 +8,8 @@ Database: 'cent285p2'.
 username: 'alan'.
 password: 'alan'.
 
-    - `CREATE ROLE alan LOGIN;`
-    - `CREATE DATABASE cent285p2 OWNER alan;`
+      - `CREATE ROLE alan LOGIN;`
+      - `CREATE DATABASE cent285p2 OWNER alan;`
 
 Install postgresql-contrib-8.4
     - `sudo apt-get install postgresql-contrib-8.4`
