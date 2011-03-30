@@ -4,18 +4,15 @@ This is a documentation for project 2 for CENT 285 at Honolulu
 Community College 
 __First Ruby on Rails Application__ by _Alan H_
 
-Database: cent285p2
+Database: 'cent285p2'.
+username: 'alan'.
+password: 'alan'.
 
-username: alan
-
-password: alan
-
-`CREATE ROLE alan LOGIN;`
-
-`CREATE DATABASE cent285p2 OWNER alan;`
+    - `CREATE ROLE alan LOGIN;`
+    - `CREATE DATABASE cent285p2 OWNER alan;`
 
 Install postgresql-contrib-8.4
-`sudo apt-get install postgresql-contrib-8.4`
+    - `sudo apt-get install postgresql-contrib-8.4`
 
 Inside sqlfile folder...
 Load SQL files into database: “createTables.sql”
